@@ -21,13 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.textContent = key
                 let ul = document.getElementById('dog-breeds')
                 ul.appendChild(li)
-            }
-        })
-})
-
-document.addEventListener('DOMContentLoaded', () => {
-    const li = document.querySelectorAll('li');
-    li.addEventListener('click', (event) => {
-        event.target.style.color = 'green';
+                li.addEventListener('click', (event) => {
+                    event.target.style.color = 'green';
+                })
+                let dropDown = document.querySelectorAll('option')
+                dropDown.addEventListener('click', (event) => {
+                console.log(event.target.value)
+                
+            })
+        }   
     })
 })
+
